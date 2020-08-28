@@ -1,0 +1,23 @@
+/* Back to top */
+.backToTop{
+    position:fixed;
+    right:50px;
+    bottom:50px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 1s;
+    i{
+        color:$color-active;
+        border:2px solid $color-active;
+        width: 40px;
+        height: 40px;
+        font-size:2rem;
+        text-align: center;
+        line-height:36px;
+        border-radius:50%
+    }
+}
+.cd-top--is-visible {
+    visibility: visible;
+    opacity: 1;
+  }

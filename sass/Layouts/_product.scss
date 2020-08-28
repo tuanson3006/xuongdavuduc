@@ -1,0 +1,156 @@
+.product-content {
+    .product-content-title {
+        margin-bottom: $mg-2;
+        h5 {
+            text-align: center;
+            text-transform: uppercase;
+            @include text-style($fs-lg, $fw-1, $color-black-1);
+            position: relative;
+            // margin-bottom: $mg-2;
+            &::after {
+                position: absolute;
+                content: "";
+                border: $border-2;
+                bottom: -5px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 60px;
+            }
+        }
+    }
+}
+.__product-list {
+    position: relative;
+    #product-list-scrollbar {
+        max-height: 768px;
+        .product-list-container {
+            .mix {
+                padding: 0;
+                margin: $mg-2 0;
+                padding: $pd-3;
+                &:hover {
+                    transition: all 0.3s;
+                    cursor: pointer;
+                    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+                    z-index: 1;
+                    background-color: #f9f9f9;
+                }
+            }
+        }
+    }
+    .product-list-carousel {
+        .pList-carousel {
+            .--title{
+                @include text-style($fs-default, $fw-2, $color-black-1);
+                border-bottom: $border-1;
+            }
+            .owl-carousel {
+                .owl-stage-outer {
+                    height: 100%;
+                    width: 100%;
+                    .owl-stage {
+                        width: 100%;
+                        height: 100%;
+                        .owl-item {
+                            width: 100%;
+                            height: 100%;
+                            .item {
+                                height: 100%;
+                                width: 100%;
+                                background-size: contain;
+                                background-position: center;
+                                background-repeat: no-repeat;
+                            }
+                        }
+                    }
+                }
+                .owl-nav {
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    right: 0;
+                    transform: translateY(-50%);
+                    .owl-prev {
+                        position: absolute;
+                        width: 48px;
+                        height: 48px;
+                        left: 0;
+                        top: 0;
+                        transform: translate3d(-25%, -50%, 0px);
+                        background-color: #fff;
+                        border-radius: 50%;
+                        border: none;
+                        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.08);
+                        z-index: 1;
+                        span {
+                            @include text-style($fs-rem-4, $fw-1, $color-black-1);
+                            line-height: $fs-rem-4;
+                            transition: all .3s;
+                        }
+                        &:focus {
+                            outline: unset;
+                        }
+                        &:hover{
+                            span{
+                                color:  $color-active;
+                            }
+                        }
+                    }
+                    .owl-next {
+                        position: absolute;
+                        width: 48px;
+                        height: 48px;
+                        right: 0;
+                        top: 0;
+                        transform: translate3d(25%, -50%, 0px);
+                        background-color: #fff;
+                        border-radius: 50%;
+                        border: none;
+                        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.08);
+                        z-index: 1;
+                        span {
+                            @include text-style($fs-rem-4, $fw-1, $color-black-1);
+                            line-height: $fs-rem-4;
+                        }
+                        &:focus {
+                            outline: unset;
+                        }
+                        &:hover{
+                            span{
+                                color:  $color-active;
+                                transition: all .3s;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.product-item {
+    position: relative;
+    height: 450px;
+    .product-img {
+        position: relative;
+        height: 320px;
+        background-position: center;
+        background-size: cover;
+        margin-bottom: $mg-4;
+        overflow: hidden;
+        .product-overlay {
+            transition: all 0.3s;
+        }
+    }
+    .product-title {
+        text-align: center;
+        h5 {
+            @include text-style($fs-md-1, $fw-2, $color-black-2);
+            text-transform: uppercase;
+            margin-bottom: $mg-2;
+        }
+    }
+    .product-btn {
+        position: absolute;
+        bottom: 10px;
+    }
+}

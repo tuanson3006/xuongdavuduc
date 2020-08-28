@@ -1,0 +1,101 @@
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    // Heroes section
+    .heroes {
+        height: 75vh;
+        .container-mid {
+            .banner-box {
+                max-width: 550px;
+                h1 {
+                    font-size: $fs-rem-4;
+                }
+                h3 {
+                    font-size: $fs-rem-2;
+                }
+                h4 {
+                    font-size: $fs-rem-1;
+                }
+                &.light-box {
+                    padding: $pd-full-2;
+                }
+            }
+        }
+    }
+
+    // PRODUCT SECTION
+    .product-content {
+        .__controls {
+            .__button {
+                width: 90%;
+                a {
+                    letter-spacing: 0px;
+                    margin: $mg-full-0;
+                }
+            }
+        }
+        .product-item {
+            height: 420px;
+            .product-img {
+                height: 300px;
+                margin-bottom: $mg-2;
+            }
+            .product-title {
+                h5 {
+                    @include text-style($fs-md-1, $fw-2, $color-black-2);
+                    text-transform: uppercase;
+                    margin-bottom: $mg-2;
+                }
+                p {
+                    margin-bottom: 0;
+                }
+            }
+            .product-btn {
+                position: absolute;
+                bottom: 10px;
+            }
+        }
+    }
+    .intro {
+        .heading-title-alt {
+            padding: $pd-full-4;
+            h3 {
+                font-size: $fs-rem-3;
+            }
+        }
+        .intro__content {
+            .row {
+                width: 100%;
+                .intro__content__item {
+                    height: 320px;
+                    padding: 0;
+                    .intro__content__description {
+                        .content-text {
+                            p {
+                                padding: 0;
+                                font-size: $fs-rem-2;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // COMPONENT
+    .product-modal {
+        .__content {
+            a {
+                top: 70px;
+                right: 40px;
+            }
+            .__content-container {
+                .row {
+                    height: 80%;
+                    width: 90%;
+                }
+            }
+        }
+    }
+    .backToTop {
+        right: 40px;
+        bottom: 40px;
+    }
+}

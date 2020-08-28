@@ -1,0 +1,157 @@
+//
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    header {
+        .logo {
+            .logo-container {
+                box-shadow: unset;
+                border-radius: 0;
+                width: 80px;
+                height: 50px;
+            }
+            .logo-container:hover {
+                box-shadow: unset;
+            }
+        }
+        .navbar-collapse {
+            .navbar-nav {
+                .nav-item {
+                    .nav-link {
+                        font-size: $fs-default - 1;
+                        letter-spacing: 0;
+                    }
+                }
+            }
+        }
+    }
+    .heroes {
+        height: 75vh;
+        .container-mid {
+            .banner-box {
+                max-width: 400px;
+
+                h1 {
+                    font-size: $fs-rem-3;
+                }
+                p {
+                    margin-bottom: $mg-2;
+                }
+                h3 {
+                    font-size: $fs-rem-1;
+                }
+                h4 {
+                    font-size: $fs-rem-0;
+                }
+                &.light-box {
+                    padding: $pd-full-3;
+                }
+            }
+        }
+    }
+    .__product-list {
+        .__product-list-row {
+            max-width: 650px;
+            .product-item {
+                height: 380px;
+                .product-img {
+                    height: 270px;
+                    margin-bottom: $mg-1;
+                }
+                .product-title {
+                    h5 {
+                        @include text-style($fs-default, $fw-2, $color-black-2);
+                        margin-bottom: $mg-1;
+                    }
+                    p {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+    .intro {
+        .heading-title-alt {
+            padding: $pd-full-4;
+            h3 {
+                font-size: $fs-rem-3;
+            }
+        }
+        .intro__content {
+            .row {
+                width: 100%;
+                .intro__content__item {
+                    height: 320px;
+                    padding: 0;
+                    .intro__content__description {
+                        .content-text {
+                            p {
+                                padding: 0;
+                                font-size: $fs-rem-2;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // COMPONENT
+    .product-modal {
+        .__content {
+            a {
+                top: 100px;
+                right: 15px;
+            }
+            .__content-container {
+                .row {
+                    height: 70%;
+                    width: 95%;
+                    .product-modal-img {
+                        height: 100%;
+                        &.owl-carousel {
+                            .owl-nav {
+                                .owl-prev {
+                                    left: 0;
+                                    span {
+                                        @include text-style($fs-rem-5, $fw-1, $color-white);
+                                    }
+                                    &:focus {
+                                        outline: unset;
+                                    }
+                                }
+                                .owl-next {
+                                    right: 0;
+                                    transform: translateY(-50%);
+                                    span {
+                                        @include text-style($fs-rem-5, $fw-1, $color-white);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .product-modal-details {
+                        height: 100%;
+                        background-color: $color-white;
+                        .p-name {
+                            h5 {
+                                @include text-style($fs-rem-3, $fw-2, $color-black-0);
+                            }
+                        }
+                        .p-details {
+                            padding-left: $pd-2;
+                            text-align: left;
+                            p {
+                                @include text-style($fs-default, $fw-2, $color-black-0);
+                                span {
+                                    @include text-style($fs-default, $fw-1, $color-black-0);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .backToTop {
+        right: 30px;
+        bottom: 30px;
+    }
+}

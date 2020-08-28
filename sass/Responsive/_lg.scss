@@ -1,0 +1,58 @@
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    // Heroes section
+    .heroes {
+        height: 80vh;
+        .container-mid {
+            .banner-box {
+                h1 {
+                    font-size: $fs-rem-4;
+                }
+                h3 {
+                    font-size: $fs-rem-2;
+                }
+                h4 {
+                    font-size: $fs-rem-1;
+                }
+                &.light-box {
+                    padding: $pd-full-2;
+                }
+            }
+        }
+    }
+    // PRODUCT SECTION
+    .product-content {
+        .__controls {
+            .__button {
+                width: 80%;
+                a {
+                    letter-spacing: 0px;
+                }
+            }
+        }
+    }
+    .intro {
+        .heading-title-alt {
+            padding: $pd-full-4;
+            h3 {
+                font-size: $fs-rem-4;
+            }
+        }
+        .intro__content {
+            .row {
+                width: 100%;
+                .intro__content__item {
+                    height: 400px;
+                    padding: 0;
+                    .intro__content__description {
+                        .content-text {
+                            p {
+                                padding: 0;
+                                font-size: $fs-rem-3;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

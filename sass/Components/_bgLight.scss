@@ -1,0 +1,29 @@
+.bg-light {
+    position: relative;
+    padding-bottom: 15em;
+    z-index: 0;
+    width: 100%;
+    &::before {
+        position: absolute;
+        left: 0;
+        top: -25px;
+        content: "";
+        width: 35%;
+        height: 50px;
+        transform: matrix(1, -0.19, 0, 2, 0, 0);  
+        background: #fff !important;
+        z-index: 2;
+        
+    }
+    &:after {
+        position: absolute;
+        right: 0;
+        top: -25px;
+        content: "";
+        width: 65%;
+        height: 50px;
+        transform: matrix(1, 0.102, 0, 2, 0, 0);
+        background: #fff !important;
+        z-index: 2;       
+    }
+}

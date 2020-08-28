@@ -1,0 +1,27 @@
+.heading-title-alt {
+    margin-bottom: $mg-5;
+    h3 {
+        position: relative;
+        margin-bottom: $mg-4;
+        padding-bottom: $pd-2;
+        @include text-style($fs-rem-4, $fw-1, $color-black-1);
+        letter-spacing: 2px;
+        &::after {
+            position: absolute;
+            bottom: -2px;
+            left: 50%;
+            width: 60px;
+            height: 2px;
+            margin-left: -31px;
+            content: "";
+            background: $color-gray-2;
+        }
+    }
+    .half-text {
+        display: inline-block;
+        width: 60%;
+        margin: 0 auto;
+        color: $color-gray-1;
+        line-height: 25px;
+    }
+}

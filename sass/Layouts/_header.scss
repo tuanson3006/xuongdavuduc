@@ -1,0 +1,35 @@
+header {
+    background-color: $color-white;
+    box-shadow: $box-shadow-logo;
+    .navbar-collapse {
+        .navbar-nav {
+            .nav-item {
+                .nav-link {
+                    text-transform: uppercase;
+                    transition: all .3s;
+                    @include text-style($fs-default, $fw-1, $color-black-1);
+                    letter-spacing: 1px;
+                    &:hover{
+                        color: $color-active;
+                    }
+                }
+                &.active {
+                    .nav-link {
+                        color: $color-active;
+                    }
+                }
+               
+            }
+        }
+        .form-inline {
+            margin-left: $mg-4;
+            input {
+                width: 200px;
+                &:focus {
+                    border-color: $color-gray-0;
+                    box-shadow: $box-shadow-logo;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+.logo {
+    cursor: pointer;
+    .logo-container {
+        box-shadow: $box-shadow-logo;
+        border-radius: 50%;
+        transition: all .3s;
+        width: 200px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .logo-name {
+            text-align: center;
+            h2 {
+                font-size: $fs-default;
+                font-family: "Sedgwick Ave Display", cursive !important;
+                margin: 0;
+                line-height: 1;
+                color: $color-black-0;
+            }
+        }
+        .logo-shadow {
+            p {
+                text-align: center;
+                font-family: "Sedgwick Ave Display", cursive !important;
+                font-size: $fs-default;
+                margin: 0;
+                transform: rotateX(180deg);
+                line-height: 1;
+                color: $color-gray-0;
+            }
+        }
+    }
+    .logo-container:hover {
+        box-shadow: $box-shadow-logo-hover;
+    }
+}
+

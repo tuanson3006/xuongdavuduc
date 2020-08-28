@@ -1,0 +1,55 @@
+.btn-search {
+    background: $color-black-2;
+    color: $color-white;
+    font-weight: $fw-0;
+    font-size: $fs-default;
+    transition: all 0.3s;
+    padding: 6px 15px;
+    &:hover {
+        color: $color-white;
+        background: $color-active;
+    }
+    &:focus {
+        box-shadow: none;
+    }
+}
+a {
+    &:not([href]):not([tabindex]) {
+        transition: all 0.3s;
+        &.btn-filter {
+            cursor: pointer;
+            border: none;
+            background-color: transparent;
+            text-transform: uppercase;
+            @include text-style($fs-default, $fw-1, #a9a8a8);
+            letter-spacing: 1px;
+            margin: 0 $mg-2;
+            display: inline-block;
+            &.mixitup-control-active {
+                color: $color-active;
+            }
+        }
+        &:hover {
+            color: $color-active;
+        }
+    }
+}
+
+.product-btn {
+    color: $color-white;
+    border: $border-1;
+    background: $color-black-2;
+    border-radius: 0px;
+    padding: 5px 20px;
+    transition: all .3s;
+    // display: block;
+    width: 100%;
+    &:hover{
+        color: $color-active;
+        // background: $color-black-2;
+    }
+    &:focus{
+        outline: none;
+        box-shadow: unset;
+    }
+}

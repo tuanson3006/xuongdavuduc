@@ -93,7 +93,7 @@ $(document).ready(function () {
         $(".product-list-container").html(result);
         for (let item of res) {
           let itemID = `.img-item-${item.id}`;
-          $(itemID).css("background-image", `url(${item.img[0]})`);
+          $(itemID).css("background-image", `url(${item.img[0].substr(1)})`);
         }
 
         // Call MixItUp to use
@@ -158,7 +158,7 @@ $(document).ready(function () {
         myCarouselStart("#pList-other", 3, 3, 3);
         for (let item of res) {
           let itemID = `.img-item-${item.id}`;
-          $(itemID).css("background-image", `url(${item.img[0]})`);
+          $(itemID).css("background-image", `url(${item.img[0].substr(1)})`);
         }
         // BTN product EVENT
         $(".product-btn").click(function () {
